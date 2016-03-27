@@ -118,6 +118,92 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-VerticalCenter" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/27/VerticalCenter/" class="article-date">
+  	<time datetime="2016-03-27T02:44:12.000Z" itemprop="datePublished">2016-03-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/27/VerticalCenter/">网页元素CSS居中【水平居中、垂直居中】</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇关于网页元素CSS居中【水平居中、垂直居中】。</p>
+<pre><code>&gt;lz常常强调有图才有真相，如果没有图，最少也要有码吧，这个有点为难了，hexo的东西
+还没有吃透，图片怎么引用路径，怎么显示还不会。。。有没有哪位高人指点一下！
+
+&gt;昔年有狂客 号尔谪仙人 笔落惊风雨 诗成泣鬼神 ——》我最喜欢的两位诗人
+    写了半天的博客 突然发现有些东西都还没有弄清楚，感觉迷糊了
+    水平居中：相对于容器来说 元素排版左右两边的距离相等
+    垂直居中：网上没有查到对应的说法，我也是醉了；我们反过来想一想：
+    把水平居中的那个概念拿过来用一下，水平修改为竖直方向 ，相对于容器上下距离一样，
+    这里强调了一个容器的概念：可以理解为父级元素，就近原则啥的都用上吧，还待考证
+    水平垂直居中：这个移动端比较常用，具体可以在网上看看
+</code></pre><p>####水平居<br>    .compact<br>    //水平居中：行内元素解决方案<br>    //只需要把行内元素包裹在一个属性display为block的父层元素中，并且把父层元素添加如下属性即可<br>    .parent {<br>        text-align:center;<br>    }<br>    //水平居中：块状元素解决方案<br>    .item {<br>        /<em> 这里可以设置顶端外边距 </em>/<br>        margin: 10px auto;<br>    }</p>
+<p>####垂直居中<br>    .compact<br>    //水平垂直居中：未知高度和宽度元素解决方案<br>    .item{<br>        position: absolute;<br>        top: 50%;<br>        left: 50%;<br>        transform: translate(-50%, -50%);  /<em> 使用css3的transform来实现 </em>/<br>    }</p>
+<p>####大群朋友的扩展<br>@云毒心 该挂的截图 还得自己敲一遍</p>
+<pre><code>&gt;<span class="comment">/*读心*/</span>
+ <span class="class">.container</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;}</span>
+ <span class="rule"><span class="attribute">.container</span>:<span class="value">after{
+     content: <span class="string">""</span></span></span>;
+     <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;
+     <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;
+
+ }
+ <span class="class">.inline_block</span><span class="rules">{
+     <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;
+ }</span>
+</code></pre><p>####参考资料<br>    //水平垂直居中：未知高度和宽度元素解决方案<br>    <a href="https://segmentfault.com/a/1190000003761600" target="_blank" rel="external">参考资料一</a><br>    <a href="http://www.zhangxinxu.com/wordpress/2013/11/margin-auto-absolute-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D-%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" target="_blank" rel="external">参考资料二</a><br>    <a href="http://blog.csdn.net/freshlover/article/details/11579669" target="_blank" rel="external">参考资料三</a><br>    <a href="http://yunkus.com/article/css3/286.html" target="_blank" rel="external">参考资料四</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/日志/">日志</a><a class="article-category-link" href="/categories/日志/CSS居中/">CSS居中</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-xusanguan" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -903,103 +989,6 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/日志/">日志</a><a class="article-category-link" href="/categories/日志/第一天/">第一天</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-��ҳԪ��CSS���С�ˮƽ���С���ֱ���С�" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2014/05/07/��ҳԪ��CSS���С�ˮƽ���С���ֱ���С�/" class="article-date">
-  	<time datetime="2014-05-07T10:44:12.000Z" itemprop="datePublished">2014-05-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/05/07/��ҳԪ��CSS���С�ˮƽ���С���ֱ���С�/">��ҳԪ��CSS���С�ˮƽ���С���ֱ���С�</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>����<strong>�µĿ�ʼ</strong>������hexo�����˵�һƪ������ҳԪ��CSS���С�ˮƽ���С���ֱ���С���</p>
-<pre><code>&gt;lz����ǿ����ͼ�������࣬����û��ͼ������ҲҪ�����ɣ������е�Ϊ���ˣ�hexo�Ķ���
-��û�г�͸��ͼƬ��ô����·������ô��ʾ�����ᡣ������û����λ����ָ��һ�£�
-
-&gt;�����п��� �Ŷ������� ���侪���� ʫ�������� ����������ϲ������λʫ��
-    д�˰����Ĳ��� ͻȻ������Щ��������û��Ū�������о��Ժ���
-    ˮƽ���У�������������˵ Ԫ���Ű��������ߵľ�������
-    ��ֱ���У�����û�в鵽��Ӧ��˵������Ҳ�����ˣ����Ƿ�������һ�룺
-    ��ˮƽ���е��Ǹ������ù�����һ�£�ˮƽ�޸�Ϊ��ֱ���� ���������������¾���һ����
-    ����ǿ����һ�������ĸ����������Ϊ����Ԫ�أ��ͽ�ԭ��ɶ�Ķ����ϰɣ�������֤
-    ˮƽ��ֱ���У������ƶ��˱Ƚϳ��ã��������������Ͽ���
-</code></pre><p>####ˮƽ��<br>    .compact<br>    //ˮƽ���У�����Ԫ�ؽ�������<br>    //ֻ��Ҫ������Ԫ�ذ�����һ������displayΪblock�ĸ���Ԫ���У����ҰѸ���Ԫ�������������Լ���<br>    .parent {<br>        text-align:center;<br>    }<br>    //ˮƽ���У���״Ԫ�ؽ�������<br>    .item {<br>        /<em> �����������ö������߾� </em>/<br>        margin: 10px auto;<br>    }</p>
-<p>####��ֱ����<br>    .compact<br>    //ˮƽ��ֱ���У�δ֪�߶ȺͿ���Ԫ�ؽ�������<br>    .item{<br>        position: absolute;<br>        top: 50%;<br>        left: 50%;<br>        transform: translate(-50%, -50%);  /<em> ʹ��css3��transform��ʵ�� </em>/<br>    }</p>
-<p>####��Ⱥ���ѵ���չ<br>@�ƶ��� �ùҵĽ�ͼ �����Լ���һ��</p>
-<pre><code>&gt;/<span class="emphasis">*����*</span>/
- .container{display: block;width: 200px;}
- .container:after{
-<span class="code">     content: "";</span>
-<span class="code">     display: inline-block;</span>
-<span class="code">     vertical-align: middle;</span>
-<span class="code">     height: 100%;</span>
-
- }
- .inline_block{
-<span class="code">     display: inline-block;</span>
-<span class="code">     vertical-align: middle;</span>
- }
-
-
-
-
-
-
-
-//ˮƽ��ֱ���У�δ֪�߶ȺͿ���Ԫ�ؽ�������
-[<span class="link_label">�ο�����һ</span>](<span class="link_url">https://segmentfault.com/a/1190000003761600</span>)
-[<span class="link_label">�ο����϶�</span>](<span class="link_url">http://www.zhangxinxu.com/wordpress/2013/11/margin-auto-absolute-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D-%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</span>)
-[<span class="link_label">�ο�������</span>](<span class="link_url">http://blog.csdn.net/freshlover/article/details/11579669</span>)
-[<span class="link_label">�ο�������</span>](<span class="link_url">http://yunkus.com/article/css3/286.html</span>)
-</code></pre>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/�ռ�/">�ռ�</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/��/">��</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/��ʼ/">��ʼ</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/��־/">��־</a><a class="article-category-link" href="/categories/��־/CSS����/">CSS����</a>
 	</div>
 
 
