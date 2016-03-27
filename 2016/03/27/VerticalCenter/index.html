@@ -21,7 +21,7 @@
 
 &amp;gt;昔年有狂客 号尔谪仙人 笔落惊风雨 诗成泣鬼神 ——》我最喜欢的两位诗人
     写了半天的博客 突然发现有些东西都还没有弄清楚，感觉">
-<meta property="og:updated_time" content="2016-03-27T02:42:06.012Z">
+<meta property="og:updated_time" content="2016-03-27T02:43:17.181Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网页元素CSS居中【水平居中、垂直居中】">
 <meta name="twitter:description" content="这是新的开始，我用hexo创建了第一篇关于网页元素CSS居中【水平居中、垂直居中】。
@@ -204,25 +204,20 @@
     <span class="attribute">transform</span>: <span class="function">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);  <span class="comment">/* 使用css3的transform来实现 */</span>
 }
 </code></pre><h2 id="大群朋友的扩展">大群朋友的扩展</h2><p>@云毒心 该挂的截图 还得自己敲一遍</p>
-<pre><code>&gt;/<span class="emphasis">*读心*</span>/
- .container{display: block;width: 200px;}
- .container:after{
-<span class="code">     content: "";</span>
-<span class="code">     display: inline-block;</span>
-<span class="code">     vertical-align: middle;</span>
-<span class="code">     height: 100%;</span>
+<pre><code>&gt;<span class="comment">/*读心*/</span>
+ <span class="class">.container</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;}</span>
+ <span class="rule"><span class="attribute">.container</span>:<span class="value">after{
+     content: <span class="string">""</span></span></span>;
+     <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;
+     <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;
 
  }
- .inline_block{
-<span class="code">     display: inline-block;</span>
-<span class="code">     vertical-align: middle;</span>
- }
-
-
-
-
-
-[<span class="link_label">参考资料一</span>](<span class="link_url">https://segmentfault.com/a/1190000003761600</span>)
+ <span class="class">.inline_block</span><span class="rules">{
+     <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;
+ }</span>
+</code></pre><h2 id="参考资料">参考资料</h2><pre><code>[<span class="link_label">参考资料一</span>](<span class="link_url">https://segmentfault.com/a/1190000003761600</span>)
 [<span class="link_label">参考资料二</span>](<span class="link_url">http://www.zhangxinxu.com/wordpress/2013/11/margin-auto-absolute-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D-%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</span>)
 [<span class="link_label">参考资料三</span>](<span class="link_url">http://blog.csdn.net/freshlover/article/details/11579669</span>)
 [<span class="link_label">参考资料四</span>](<span class="link_url">http://yunkus.com/article/css3/286.html</span>)
